@@ -34,7 +34,7 @@ class ElizaServerTest {
         container.connectToServer(client, URI("ws://localhost:$port/eliza"))
         latch.await()
         assertEquals(3, list.size)
-        assertEquals("The doctor is in.", list[0]) 
+        assertEquals("The doctor is in.", list[0])
     }
 
     @Test
